@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.app-background {
+  height: 75vh; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+
+/* Main container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
+
+/* Optional text/logo inside the background */
+.hero-text {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: auto; /* Push footer to bottom */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .page-content {
+    padding: 20px;
+  }
+}
