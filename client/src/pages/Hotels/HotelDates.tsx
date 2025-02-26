@@ -1,4 +1,3 @@
-// HotelDates.tsx
 import { useState, useEffect } from "react";
 import CustomDatePicker from "../../components/CustomDatePicker";
 
@@ -25,7 +24,7 @@ const HotelDates = () => {
     return (
         <div>
             <CustomDatePicker
-                mode="range"
+                mode="round-trip"
                 startDate={dates.startDate}
                 endDate={dates.endDate}
                 onChange={handleDateChange}

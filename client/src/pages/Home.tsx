@@ -1,13 +1,13 @@
+import { useState } from "react";
 import Container from "../components/Container";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-import { useState } from "react";
-import { TabType } from "../utils/types";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import SearchButton from "../components/SearchButton";
 
 const Home = () => {
-    const [activeTab, setActiveTab] = useState<TabType>('flights');
+    const [activeTab, setActiveTab] = useState<"flights" | "hotels" | "tours">("flights");
 
     return (
         <div className="app-container">
@@ -15,8 +15,11 @@ const Home = () => {
                 <Header />
                 <Navbar setActiveTab={setActiveTab} activeTab={activeTab} />
                 <Container activeTab={activeTab} />
+                <div className="relative">
+                    <SearchButton activeTab={activeTab} />
+                </div>
             </main>
-            <div className="faq-spacing" />
+            <div className="py-8 sm:py-10 md:py-12 lg:py-16" />
             <FAQ />
             <Footer />
         </div>

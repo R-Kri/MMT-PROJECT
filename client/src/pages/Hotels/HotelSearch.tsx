@@ -1,8 +1,8 @@
 
 const HotelSearch = () => {
-  return (
+return (
     <div>HotelSearch</div>
-  )
+)
 }
 
 export default HotelSearch
