@@ -21,6 +21,6 @@ export const faqData: FAQItem[] = [
     },
     {
         question: "What payment methods do you accept?",
-        answer: "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. All payments are processed securely through our encrypted payment system."
+        answer: "We accept all major credit cards (Visa, MasterCard, American Express), PhonePe, Google Pay, Paytm, and bank transfers. All payments are processed securely through our encrypted payment system."
     }
 ];
