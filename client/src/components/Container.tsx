@@ -9,7 +9,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ activeTab }) => {
   return (
-    <div className="w-full -mt-8 bg-white flex items-center justify-center relative rounded-xl">
+    <div className="w-full -mt-8 bg-white flex relative rounded-xl">
       {activeTab === 'flights' && <FlightSearch />}
       {activeTab === 'hotels' && <HotelSearch />}
       {activeTab === 'tours' && <TourSearch />}

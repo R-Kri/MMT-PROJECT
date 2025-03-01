@@ -1,9 +1,14 @@
+import { useState } from "react";
+import RoomTypeSelector from "./RoomTypeSelector";
 
 const HotelSearch = () => {
-return (
-    <>
-    </>
-)
-}
+    const [roomTypes, setRoomTypes] = useState<string>("four");
 
-export default HotelSearch
+    return (
+        <div className="flex justify-start">
+            <RoomTypeSelector roomTypes={roomTypes} setRoomTypes={setRoomTypes} />
+        </div>
+    )
+};
+
+export default HotelSearch;
