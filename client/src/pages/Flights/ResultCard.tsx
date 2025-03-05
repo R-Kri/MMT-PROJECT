@@ -40,7 +40,7 @@ export const ResultCard: React.FC<FlightCardProps> = ({ flight, isSelected, onSe
             <div
                 onClick={onSelect}
                 className={`rounded-lg border bg-white shadow-md transition-all duration-300 cursor-pointer overflow-hidden
-          ${isSelected ? "border-2 border-blue-500" : "border border-gray-200"}`}
+            ${isSelected ? "border-2 border-blue-500" : "border border-gray-200"}`}
             >
                 <div className="p-4">
                     <div className="flex items-center justify-between">

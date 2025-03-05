@@ -11,7 +11,7 @@ const Container: React.FC<ContainerProps> = ({ activeTab }) => {
   return (
     <div className="w-full -mt-8 bg-white flex relative rounded-xl">
       {activeTab === 'flights' && <FlightSearch />}
-      {activeTab === 'hotels' && <HotelSearch />}
+      {activeTab === 'hotels' && <HotelSearch/>}
       {activeTab === 'tours' && <TourSearch />}
     </div>
   );
